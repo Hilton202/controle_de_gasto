@@ -1,12 +1,25 @@
-# React + Vite
+# 💼 Controle de Gastos Pessoais (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web desenvolvida com **React.js** que permite o controle financeiro pessoal de forma simples e visual. O usuário pode adicionar, visualizar, remover e organizar seus gastos mensais, além de cadastrar seu salário e acompanhar o saldo restante.
 
-Currently, two official plugins are available:
+## ⚙️ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Cadastro de **salário mensal** com opção de editar e salvar.
+- ✅ Adição de **gastos com descrição, valor, categoria e data**.
+- ✅ **Persistência de dados com localStorage** (os dados continuam salvos mesmo após atualizar a página).
+- ✅ Exibição do **saldo restante automaticamente calculado**.
+- ✅ **Lista de gastos** com botão para excluir individualmente.
+- ✅ Agrupamento de gastos por **categoria**.
+- ✅ Dashboard com **gráfico de barras** (BarChart) mostrando a distribuição de gastos por categoria usando `Recharts`.
 
-## Expanding the ESLint configuration
+## 📊 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React.js](https://reactjs.org/)
+- [Recharts](https://recharts.org/en-US/)
+- [JavaScript (ES6+)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [LocalStorage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+
+## 💡 Objetivo
+
+Este projeto foi criado com o intuito de **praticar React**, **manipulação de estado**, **uso de localStorage**, e **criação de dashboards interativos** para visualização de dados financeiros.
