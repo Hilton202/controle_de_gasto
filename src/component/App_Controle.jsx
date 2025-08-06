@@ -164,14 +164,25 @@ const App_Controle = () => {
               <div className="chart-wrapper">
                 
 
-                <BarChart width={400} height={300} data={dataGrafico}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
+                <ResponsiveContainer width="100%" height={300}>
+                  <PieChart>
+                    <Pie
+                      data={dataGrafico}
+                      dataKey="value"
+                      nameKey="name"
+                      cx="50%"
+                      cy="50%"
+                      outerRadius={100}
+                      fill="#8884d8"
+                      label>
+                      {dataGrafico.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                      ))}
+                    </Pie>
                     <Tooltip formatter={(value) => formatarMoeda(value)} />
                     <Legend />
-                    <Bar dataKey="value" fill="#4A90E2" />
-                </BarChart>
+                  </PieChart>
+                </ResponsiveContainer>
 
               </div>
             </div>
@@ -181,5 +192,6 @@ const App_Controle = () => {
     </div>
   );
 };
+
 
 export default App_Controle;
